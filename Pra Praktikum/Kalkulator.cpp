@@ -16,7 +16,7 @@ int kali(int a, int b)
 	return a * b;
 }
 
-int bagi(int a, int b)
+float bagi(float a, float b)
 {
 	return a / b;
 }
@@ -29,7 +29,8 @@ int modul(int a, int b)
 
 int main()
 {
-	int a,b,jml,pil;
+	int a,b,pil;
+	float jml;
 	
 	cout << "Selamat datang di Kalkulator Sederhana"<<endl;
 	cout << "Silahkan pilih operasi aritmatika yang ingin dilakukan"<<endl;
@@ -59,7 +60,7 @@ int main()
 			case 3:
 				{
 					jml = kali(a,b);
-					cout << "Jumlah " << a << " xc" << b <<" = "<< jml;
+					cout << "Jumlah " << a << " x " << b <<" = "<< jml;
 					break;
 				}
 			case 4:
